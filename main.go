@@ -43,5 +43,9 @@ func InitBlockchain() *Blockchain {
 }
 
 func main() {
+	bc := InitBlockchain()
+
+	bc.AddBlock("Block 1 after Genesis")
+	bc.AddBlock("Block 2 after Genesis")
 
 }
