@@ -33,6 +33,11 @@ func (bc *Blockchain) AddBlock(data string) {
 	bc.blocks = append(bc.blocks, newBlock)
 }
 
+// Genesis block
+func FirstBlock() *Block {
+	return CreateBlock("A Genesis block", []byte{})
+}
+
 func main() {
 
 }
